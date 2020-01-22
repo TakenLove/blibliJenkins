@@ -23,7 +23,7 @@ def call(Map param){
 			stage('Deliver') {
 				steps {
 					withEnv([
-						'1='+param.ip
+						'ip='+param.ip
 					]){
 						sh(containerAgent)
 					}
