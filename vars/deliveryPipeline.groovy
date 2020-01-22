@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call(Map param){
-	def containerAgent = LibraryResource 'delivery.sh'
+	def containerAgent = libraryResource 'delivery.sh'
 	pipeline {
 		agent {label "babu1"}
 		stages {
