@@ -23,6 +23,6 @@ set +x
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
-scp target/${NAME}-${VERSION}.jar root@$1:/home/future/app.jar
-ssh root@$1 'cd /home/future && java -jar app.jar' 
+scp target/${NAME}-${VERSION}.jar root@$ip:/home/future/app.jar
+ssh root@$ip 'cd /home/future && java -jar app.jar' 
 
