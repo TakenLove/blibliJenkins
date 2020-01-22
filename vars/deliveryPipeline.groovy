@@ -22,7 +22,6 @@ def call(Map param){
 			}
 			stage('Deliver') {
 				steps {
-					sh "./jenkins/scripts/deliver.sh $param.ip"
 					withEnv([
 						'1='+param.ip
 					]){
