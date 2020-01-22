@@ -22,6 +22,7 @@ def call(Map param){
 			stage('Deliver') {
 				steps {
 					sh './jenkins/scripts/deliver.sh'
+					echo param.
 				}
 			}
 		}
