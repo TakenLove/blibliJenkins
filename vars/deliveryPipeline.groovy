@@ -2,7 +2,7 @@
 
 def call(Map param){
 	pipeline {
-		agent babu1
+		"agent {babu1}"
 		stages {
 			stage('Build') {
 				steps {
